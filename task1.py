@@ -8,7 +8,7 @@ def get_input(file_name):
 def get_increasing_depth_sum_with_time_window(numbers, window_size):
   previous = sum(numbers[:window_size])
   increasing_depth = 0
-  
+
   for i in range(window_size, len(numbers)+1):
     current = sum(numbers[i-window_size:i])
     if current > previous:
@@ -21,3 +21,4 @@ def get_increasing_depth_sum_with_time_window(numbers, window_size):
 if __name__ == "__main__":
   numbers = get_input('./input/input1_1.txt')
   print(get_increasing_depth_sum_with_time_window(numbers, 1))
+  print(get_increasing_depth_sum_with_time_window(numbers, 3))
