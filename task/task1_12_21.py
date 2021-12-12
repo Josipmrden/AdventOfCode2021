@@ -19,6 +19,6 @@ def get_increasing_depth_sum_with_time_window(numbers, window_size):
   return increasing_depth
 
 if __name__ == "__main__":
-  numbers = get_input('./input/input1_1.txt')
+  numbers = get_input('./input/input1.txt')
   print(get_increasing_depth_sum_with_time_window(numbers, 1))
   print(get_increasing_depth_sum_with_time_window(numbers, 3))
