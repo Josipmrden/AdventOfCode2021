@@ -27,7 +27,7 @@ func fuelNeededForCrabs(crabPositions []int, position int, fuelType string) int 
 	for _, crabPosition := range crabPositions {
 		sum += getFuelNeeded(crabPosition, position, fuelType)
 	}
-
+  
 	return sum
 }
 
